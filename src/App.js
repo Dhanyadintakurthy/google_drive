@@ -19,7 +19,7 @@ function App() {
               Email or phone
             </legend>
             ​<label for="mail"></label>
-            <input type="email" className="email" value=""></input>
+            <input type="email" className="email"></input>
           </fieldset>
           <a className="forgotmail" href="https://google.com"><span>Forgot mail?</span></a>
           <fieldset className="password">
