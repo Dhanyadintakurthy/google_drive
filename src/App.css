@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+.page{
+  display :flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.left{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 50%;
+  height: 100%;
 }
-
-.App-link {
-  color: #61dafb;
+.right{
+  height: 100%;
+  width: 50%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.driveicon{
+  height: 4cm;
+  width: 6cm;
+  margin: 1.5cm;
+  padding-left: 4.5cm;
+}
+.green{
+  background-color: rgb(64, 168, 64);
+  height: 4cm;
+}
+.blue{
+  background-color: rgb(36, 36, 196);
+  height: 4cm;
+}
+.googleicon{
+  height: 1cm;
+}
+h1{
+  text-align: center;
+}
+.container{
+  text-align: center;
+  margin: 3cm;
+  box-shadow: 5px 5px 5px 5px gray;
+}
+.username,.password{
+  text-align: left;
+  margin: 0.5cm 0.5cm 0cm 0.5cm;
+}
+input{
+  border-style: hidden;
+}
+input:focus{
+  outline: none;
+}
+.forgotmail{
+  text-align: left;
+  font-size: smaller;
+  margin-left: 00.5cm;
+}
+button{
+  margin: 4mm;
+  background-color: rgb(102, 102, 255);
+  color: aliceblue;
+  padding: 2mm;
+  width: 20%;
+  
+}
+.googleicon{
+  padding-top: 4mm;
 }
