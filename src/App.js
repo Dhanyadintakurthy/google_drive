@@ -1,6 +1,30 @@
 import './App.css';
-import signin from './signin';
+import React,{useState} from "react";
+import Axios from 'axios'
+
 function App() {
+  
+  const [email,setEmail]=useState('');
+  const [password,setPassword]=useState('');
+  
+  async function login () {
+    // console.warn(email,password);
+    // let item = {email,password};
+    // let result = await fetch("http://localhost:9000/users")
+    // //,{
+    // //   method:'POST',
+    // //   headers:{
+    // //     "Content-Type":"application/json",
+    // //     "Accept":'application/json'
+    // //   },
+    // //   body:JSON.stringify(item)
+    // // });
+    // // result = await result.json();
+    // // localStorage.setItem("user-info",JSON.stringify(result));
+    // // //history.push("/add");
+    // console.log(JSON.stringify(result));
+    const newdata = 
+  }
   return (
     <div className="page">
       <div className="left">
@@ -11,25 +35,27 @@ function App() {
       </div>
       <div className="right">
         <div className="container">
-          <img className="googleicon" src="https://vcet.co/wp-content/uploads/2018/08/GOOGLE.jpg"></img>
+          <img className="googleicon" src="https://vcet.co/wp-content/uploads/2018/08/GOOGLE.jpg" alt="google"></img>
           <h3 className="signin">Sign in</h3>
           <p>continue to google drive</p>
           <fieldset className="username">
             <legend>
               Email or phone
             </legend>
-            ​<label for="mail"></label>
-            <input type="email" className="email"></input>
+            ​<label></label>
+            <input type="email" onChange={(e)=>setEmail(e.target.value)} 
+            className="email"></input>
           </fieldset>
-          <a className="forgotmail" href="https://google.com"><span>Forgot mail?</span></a>
+          <a className="forgotmail" href="https://google.com"><span>Forgot password?</span></a>
           <fieldset className="password">
             <legend>
               password
             </legend>
-            <label for="pass"></label>
-            <input type="password" className="pass"></input>
+            <label></label>
+            <input type="password" onChange={(e)=>setPassword(e.target.value)}
+            className="pass"></input>
           </fieldset>
-          <button className="submit">Next</button>
+          <button className="submit" onClick={login}>Next</button>
         </div>
       </div>
     </div>
