@@ -1,6 +1,6 @@
 import './App.css';
 import React,{useState} from "react";
-import Axios from 'axios'
+//import Axios from 'axios'
 
 function App() {
   
@@ -8,22 +8,22 @@ function App() {
   const [password,setPassword]=useState('');
   
   async function login () {
-    // console.warn(email,password);
+    console.warn(email,password);
     // let item = {email,password};
-    // let result = await fetch("http://localhost:9000/users")
-    // //,{
-    // //   method:'POST',
-    // //   headers:{
-    // //     "Content-Type":"application/json",
-    // //     "Accept":'application/json'
-    // //   },
-    // //   body:JSON.stringify(item)
-    // // });
-    // // result = await result.json();
-    // // localStorage.setItem("user-info",JSON.stringify(result));
-    // // //history.push("/add");
-    // console.log(JSON.stringify(result));
-    const newdata = 
+    let result = await fetch("https://movis-b28wd.herokuapp.com/users")
+    //,{
+    //   method:'POST',
+    //   headers:{
+    //     "Content-Type":"application/json",
+    //     "Accept":'application/json'
+    //   },
+    //   body:JSON.stringify(item)
+    // });
+    // result = await result.json();
+    // localStorage.setItem("user-info",JSON.stringify(result));
+    // //history.push("/add");
+    console.log(JSON.stringify(result));
+    
   }
   return (
     <div className="page">
